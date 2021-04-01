@@ -3,7 +3,7 @@ const maxLength = clockDesigns.length;
 let startIndex = 0;
 
 const clock = document.querySelector(".clock");
-clock.style.background = "url('images/clock5.png')";
+clock.style.background = "url('assets/img/clock.png')";
 clock.style.backgroundSize = "cover";
 
 function changeClock() {
@@ -11,7 +11,7 @@ function changeClock() {
   if (startIndex === maxLength) {
     startIndex = 0;
   }
-  clock.style.background = `url('images/${clockDesigns[startIndex]}.png')`;
+  clock.style.background = `url('assets/img/${clockDesigns[startIndex]}.png')`;
   clock.style.backgroundSize = "cover";
 }
 
